@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .title{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main input[type=submit]{
+    width: 100px;
+    height: 30px;
+    margin-top: 1rem;
+    color: white;
+    background-color:rgb(246, 71, 71);
+    border-radius: 10px;
+    border: none;
+    font-size: large;
+    &:hover{
+        background-color: white;
+        border:0.5px solid gray;
+        color:rgb(246, 71, 71) ;
+    }
+}
+img{
+    width: 60%;
+    height: 50%;
+    margin-top: 6rem;
+    opacity: 0.85;
+}

@@ -1,0 +1,53 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Prediction</title>
+    <style>
+      body {
+        /* background-image: url("{%static 'C:/Users/User/Desktop/django/CovidPrediction/CovidPredictor/static/mask1.jpg'%}");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: transparent;
+            background-attachment: fixed; */
+      }
+    </style>
+    <link rel="stylesheet" href="../static/predict.css" />
+  </head>
+  <body>
+    <div class="start">
+      <img class="img1" src="{% static '1.jpg' %}" />
+
+      <div class="content">
+        <h1>Welcome to Covid Prediction</h1>
+
+        <form class="form"  action="result">
+          <div>
+            <p>Fever</p>
+            <input class="text" type="'text" name="n1" />
+          </div>
+          <div>
+            <p>Body Pain</p>
+            <input class="text" type="'text" name="n2" />
+          </div>
+          <div>
+            <p>Age</p>
+            <input class="text" type="'text" name="n3" />
+          </div>
+          <div>
+            <p>Runny Nose</p>
+            <input class="text" type="'text" name="n4" />
+          </div>
+          <div>
+            <p>Difficulty Breathing</p>
+            <input class="text"type="'text" name="n5" />
+          </div>
+          <input type="submit" value="Predict" />
+        </form>
+       <label style="color:{{prediction_result_color}}">{{result}}</label>
+      </div>
+    </div>
+  </body>
+</html>
